@@ -61,6 +61,20 @@
                             </div>
                         </div>
 
+                        <div class="row mb-3">
+                            <label for="phone" class="col-md-4 col-form-label text-md-end">{{ __('Telefono') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="phone" type="text" class="form-control" name="phone">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="img" class="col-md-4 col-form-label text-md-end">{{ __('Imagen') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="img" type="text" class="form-control" name="img">
+                            </div>
+                        </div>
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
