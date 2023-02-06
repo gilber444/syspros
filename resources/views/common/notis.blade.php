@@ -25,6 +25,14 @@
                 }
             });
         });
+
+        window.livewire.on('item-error', msg =>{
+            Swal.fire({
+                title: 'Error',
+                text: msg,
+                icon: 'error'
+            });
+        });
     });
 
     function Confirm(id, productos)
