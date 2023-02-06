@@ -16,13 +16,13 @@ return new class extends Migration
         Schema::create('clientes', function (Blueprint $table) {
             $table->id();
             $table->string('nombreCliente', 150);
-            $table->string('dui', 10);
-            $table->string('nit', 20);
+            $table->string('dui', 10)->nullable();
+            $table->string('nit', 20)->nullable();
             $table->string('homologado', 5)->default('SI', 'NO');
-            $table->string('registro', 50);
-            $table->string('giro', 150);
-            $table->string('direccion', 255);
-            $table->string('telefono', 9);
+            $table->string('registro', 50)->nullable();
+            $table->string('giro', 150)->nullable();
+            $table->string('direccion', 255)->nullable();
+            $table->string('telefono', 9)->nullable();
             $table->enum('tipo', ['CLIENTE', 'ESCUELA', 'PROVEEDOR'])->default('CLIENTE');
             $table->softDeletes();
             $table->timestamps();

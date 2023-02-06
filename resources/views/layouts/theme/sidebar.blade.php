@@ -87,7 +87,7 @@
       </li>
       <!-- Clientes -->
       <li class="menu-item">
-        <a href="javascript:void(0);" class="menu-link">
+        <a href="{{ route('clientes') }}" class="menu-link">
           <i class='menu-icon tf-icons bx bx-user-circle'></i>
           <div data-i18n="Clientes">Clientes</div>
         </a>
@@ -136,27 +136,27 @@
         </a>
         <ul class="menu-sub">
           <li class="menu-item">
-            <a href="#" class="menu-link">
+            <a href="{{ route('roles') }}" class="menu-link">
               <div data-i18n="Roles">Roles</div>
             </a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link">
+            <a href="{{ route('permisos') }}" class="menu-link">
               <div data-i18n="Permisos">Permisos</div>
             </a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link">
+            <a href="{{ route('usuarios') }}" class="menu-link">
               <div data-i18n="Usuarios">Usuarios</div>
             </a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link">
+            <a href="{{ route('empresa') }}" class="menu-link">
               <div data-i18n="Empresa">Empresa</div>
             </a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link">
+            <a href="{{ route('condicion') }}" class="menu-link">
               <div data-i18n="Condicion Pago">Condicion Pago</div>
             </a>
           </li>
